@@ -1,6 +1,19 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: black;
   color: aliceblue;
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+div  {
+  width: 5px;
+  height: 5px;
+  border: 2px solid blue;
+  position: absolute;
 }
