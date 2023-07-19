@@ -23,3 +23,7 @@ img {
   max-width: 33vw;
   max-height: 33vh;
 }
+
+.hidden {
+  visibility: hidden;
+}

@@ -8,6 +8,7 @@ const createImgElement = () => {
   const randomNumber = Math.floor(Math.random()*images.length);
   const randomImg = images.splice(randomNumber, 1);
   img.src = randomImg;
+  img.classList.add('hidden');
 
   return img;
 }
@@ -15,11 +16,12 @@ const createImgElement = () => {
 const handleClick = e => {
   const img = createImgElement();
   img.onload = () => {
-    img.style.left = `${e.x - (img.width/2)}px`;
+  img.style.left = `${e.x - (img.width/2)}px`;
   img.style.top = `${e.y - (img.height/2)}px`;
-  }
+  img.classList.remove('hidden');
+}
 
-  document.body.append(img);
+document.body.append(img);
 }
 
 
