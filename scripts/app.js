@@ -1,1 +1,6 @@
-console.log("Yep we're talkin'")
+const handleClick = e => {
+  console.log(e);
+}
+
+
+document.body.addEventListener('click', e => handleClick(e))
