@@ -1,8 +1,8 @@
 const handleClick = e => {
   const div = document.createElement('div');
-  div.style.left = `${e.x}px`;
-  div.style.top = `${e.y}px`;
   document.body.append(div);
+  div.style.left = `${e.x - (div.scrollWidth/2)}px`;
+  div.style.top = `${e.y - (div.scrollHeight/2)}px`;
 }
 
 
